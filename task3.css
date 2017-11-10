@@ -1,0 +1,7 @@
+html body{margin:0;padding: 0;background-color:#68CDD5;font-size:125%;}
+	.img1{padding-left:1em;padding-top: 1em;}
+	.img2{padding-top:5em;text-align: center;}
+	.box{padding:5em 30% 5em 30%;}
+	.box p{color: white;font-size: 15px;}
+	.img3{padding-left: 5em;float:left;padding-top:5em;}
+	.img4{padding-right: 5em;float:right;padding-top:5em;}
