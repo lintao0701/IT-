@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Document</title>
+</head>
+<style type="text/css">
+html body{color: white;font-size:125%;width:100%;margin: 0;background-color: #eff0f4;}
+	.header{display: flex;background-color: #5fc0cd;height: 66px;justify-content: center;padding: 0 1em 0 ;}
+	.left{position: absolute;left: 1em;}
+	.right{position: absolute;right: 1em;}
+	.main{height: 13em;padding-top: 15px;}
+	.phone{background: url(iphone.png)no-repeat 20px center;height: 3em;background-color: white;}
+	.lock{background: url(lock.png)no-repeat 20px center;height: 3em;background-color: white;;margin: 0.5em 0 3em 0;}
+	.phone input{height: 40px;width:100%;margin: 10px 0 10px 60px ;padding: 0;font-size: 18px;text-indent: 20px;outline: none;border:0;border-left: 3px solid #eff0f4;}
+	.lock input{height: 40px;width:100%;margin: 10px 0 10px 60px ;padding: 0;font-size: 18px;text-indent: 20px;outline: none;border:0;border-left: 3px solid #eff0f4;}
+	.button{height: 66px;width: 100%;background-color: #5fc0cd;color: white;letter-spacing:5px;font-size: 100%;border: 0;outline: none;}
+	.footer{padding-right: 20px;float: right;color: #5fc0cd;margin-top: 10px;text-decoration:underline;}
+
+	
+</style>
+<body>
+	<div class="header">
+		<p class="left">关闭</p>
+		<p><b>登录</b></p>
+		<p class="right">注册</p>
+	</div>
+	<div class="main">
+		<form>
+			<div class="phone">
+				<input type="text" name="text" placeholder="请输入手机号" />
+		    </div>
+		    <div class="lock">
+		    	<input type="password" name="password" placeholder="请输入密码"/>
+		    </div>
+		    <button type="button" class="button">登录</button>
+	</form>
+	</div>
+	<div class="footer">
+		忘记密码
+	</div>
+</body>
+</html>
