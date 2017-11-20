@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Document</title>
+	<style type="text/css">
+		html body {
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			width: 100%;
+			height: 56px;
+			background-color: #5fc0cd;
+			color: white;
+			position: fixed;
+			top: 0;
+			bottom: 0;
+		}
+		.back {
+			float: left;
+			margin: 15px 0 0 15px;
+		}
+		p {
+			text-align: center;
+			margin: 15px;
+			font-size: 20px;
+		}
+		footer {
+			width: 100%;
+			height: 70px;
+			position:fixed;
+			bottom: 10px;
+			display: flex;
+			justify-content: space-between;
+		}
+		.left {
+			color: #5fc0cd;
+			border: 1px solid  #5fc0cd;
+			border-radius: 5px;
+			width: 50%;
+			height: 60px;
+			font-size: 20px;
+			background-color: white;
+			margin: 10px;
+		}
+		.right {
+			color:white;
+			background-color:  #5fc0cd;
+			border-radius: 5px;
+			height: 60px;
+			width: 50%;
+			font-size: 20px;
+			border: 0;
+			margin: 10px;}
+		main {
+			position: absolute;
+			top: 56px;
+			bottom: 70px;
+			left: 0;
+			right: 0;
+			overflow-y: auto;
+			overflow-x: hidden;
+			-webkit-overflow-scrolling: touch;
+			background-color: #ffffff;
+		}
+		main .content {
+			height: auto;
+		}
+		.user {
+			position: relative;
+			background: url(img1.png)
+			no-repeat 0 center;
+			height: 250px;
+			background-size: cover;
+			color: #fff
+		}
+		.people {
+			position: absolute;
+			height: 130px;
+			margin: 60px 20px;
+		}
+		.message {
+			position: relative;
+			top: 50%;
+			margin-left: 160px;
+			transform: translateY(-50%);
+		}
+		.message p {
+			color: white;
+			text-align: left;
+		}
+		.address {
+			height: 26px;
+			width: 200px;
+			background: url(shape1.png)
+			no-repeat 0 center;
+			padding-left: 20px;
+		} 
+		.user_info {
+			position: absolute;
+			top: 260px;
+			width: 100%;
+		}
+		.user_info_title {
+			background: url(shape2.png)
+			no-repeat 15px center;
+			width: 100%;
+			height: 70px;
+			padding-left: 20px;
+			border-bottom: 1px solid #ccc;
+		}
+		.user_info_title span {
+			display: table-cell;
+			padding-top: 20px;
+			padding-left: 15px;
+			font-size: 20px;
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		li {
+			position: relative;
+			min-height: 60px;
+			line-height: 60px;
+			border-bottom: 1px solid #ccc;
+			font-size: 20px;
+		}
+		.user_info_star {
+			float: left;
+			background: url(star.png)
+			no-repeat 0 center;
+			background-size: 20px;
+			margin-left: 35px;
+			padding-left: 30px;
+		}
+		.user_info_left {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			border-right: 1px solid #f1eeee;
+			margin-left: 20px;
+			padding-left: 20px;
+			padding-right: 20px;
+			font-size: 20px;
+			line-height: 30px;
+			color: #cccccc;		
+		}
+		.user_info_right {
+			margin-left: 150px;
+		}
+		.user_info_skill {
+			margin-left: 150px;
+			line-height: 25px;
+		}
+		.fill {
+			height: 80px;
+			width: 100%;
+		}
+
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="back" ><img src="back.png"></div>
+		<p>个人主页</p>
+	</header>
+	<main>
+		<div class="content">
+			<div class="user ">
+				<div class="people"><img src="img2.png"></div>
+				<div class="message">
+					<p>高素雅 51岁</p>
+					<p class="address">北京.通州.果园</p>
+				</div>
+			</div>
+			<div class="user_info">
+				<div class="user_info_title">
+					<span>专业技能</span>
+				</div>
+			<ul>
+				<li>
+					<div class="user_info_star">住家</div>
+					<div class="user_info_star">不含餐</div>
+			    </li>
+			    <li>
+			    	<div class="user_info_left">从业技能</div>
+			    	<div class="user_info_right">0~3年</div>
+			    </li>
+			    <li>
+			    	<div class="user_info_left">工作时间</div>
+			    	<div class="user_info_right">全天</div>
+			    </li>
+			    <li>
+			    	<div class="user_info_left">服务价格</div>
+			    	<div class="user_info_right"><font color="#ff000">25元/小时</font></div>
+			    </li>
+			    <li>
+			    	<div class="user_info_left">自我介绍</div>
+			    	<div class="user_info_skill">可以洗衣、做饭、照顾老人、在护工方面有5年的经验，经验丰富，可以洗衣、做饭、照顾老人、在护工方面有5年的经验，经验丰富。</div>
+			    </li>
+			</ul>
+			<div class="fill"></div>
+			</div>
+		</div>		
+	</main>
+	<footer>
+		<input type="button" class="left" name="" value="留言">
+		<input type="button" class="right" name="" value="电话联系">
+	</footer>
+</body>
+</html>
